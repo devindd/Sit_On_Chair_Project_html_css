@@ -41,7 +41,7 @@ header{
   float: right;
 }
 
-li {
+.nav li {
   margin-top: 15px;
   margin-bottom: 15px;
   display: inline-block;
@@ -88,7 +88,7 @@ li {
   color: #24ba9f;
 }
 
-.button{
+.more{
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
@@ -147,14 +147,26 @@ li {
 }
 
 .photobox h1 {
-  font-size: 15px;
+  font-weight: 700;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+
+.photobox p{
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 12px;
+  line-height: 20px;
 }
 
 #pricelist{
-  background-color: #d1d0d8;
-  margin: 0 auto;
-  height: 530px;
-
+  font-size:20px;
+  background-color:#d1d0d8;
+  color:black;
+  margin-top:30px;
+  padding:30px 0;
 }
 
 .arrow{
@@ -162,7 +174,6 @@ li {
     position: absolute;
     top:40%;
     margin-top:-50px;
-
     color:#1ec1a2;
     z-index: 2;
 }
@@ -187,6 +198,317 @@ li {
   border-bottom-width:5px;
   border-style:solid;
   border-color:#1ec1a2;
+}
+
+h2 {
+    padding-top: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+#pricelist .underline, #form .underline{
+  width: 30%;
+  border-bottom-width: 10px;
+
+}
+
+#pricelist{
+    font-size:20px;
+    background-color:#f1f1f1;
+    color:black;
+    margin-top:30px;
+    padding:30px 0;
+}
+.cards{
+    width:30%;
+    float:left;
+    margin-left:5%;
+    height: 500px;
+    margin-top:80px;
+    border:1px solid #d5d5d5;
+    position:relative;
+    color:#1ec1a2;
+    background-color:#1ec1a2;
+}
+.cards:nth-of-type(2){
+    margin-left:0;
+}
+.cards:nth-of-type(2n+2){
+    background-color:#f9f9f9;
+}
+.help_box{
+    position:absolute;
+    left:0;
+    right:0;
+    top:-30px;
+    text-align:center;
+}
+.circle{
+    width:50px;
+    height:50px;
+    border-radius:25px;
+    border:1px solid #d5d5d5;
+    position:absolute;
+    left:50%;
+    margin-left:-25px;
+    background-color:#f9f9f9;
+}
+.middle_cards .circle{
+    background-color: #1ec1a2;
+    border-color:#1ec1a2;
+}
+.small_circle{
+    width:50%;
+    height:50%;
+    border-radius:50%;
+    background-color:#c2c2c2;
+    position:absolute;
+    left:50%;
+    margin-left:-12px;
+    top:50%;
+    margin-top:-12px;
+}
+.middle_cards .small_circle{
+    background-color:white;
+}
+.price{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    position:absolute;
+    top:90px;
+    left:50%;
+    margin-left:-60px;
+    border:1px solid #d5d5d5;
+    text-align:center;
+    background-color:white;
+    color:#c2c2c2;
+}
+.middle_cards .price{
+    border:1px solid #1ec1a2;
+}
+.price .num1{
+    position:absolute;
+    left:15px;
+    top:20px;
+    font-size:50px;
+}
+.price .num2{
+    position:absolute;
+    right:15px;
+    top:25px;
+    font-size:16px;
+}
+.price .period{
+    position:absolute;
+    bottom:20px;
+    left:25px;
+    font-size:15px;
+}
+.firstbox .price .num1{
+    left:25px;
+}
+.secondbox .price .num1{
+    left:25px;
+}
+.secondbox .price{
+    color:#1ec1a2;
+}
+.cards p{
+    text-align:center;
+    margin:35px 0 30px 0;
+    font-size:22px;
+}
+.middle_cards p{
+    color:white;
+}
+.price-options{
+    margin:0 auto;
+    position:absolute;
+    border:1px solid grey;
+    color:grey;
+}
+.offer{
+    position:absolute;
+    top:240px;
+    width:100%;
+    text-align:center;
+    background-color:#e4e4e4;
+    font-family:'ralewayregular', Arial, sans-serif;
+}
+.offer li{
+    list-style-type: none;
+    color: grey;
+    font-size:20px;
+    padding:10px;
+}
+.offer li:nth-child(2n+2){
+    background-color:#f1f1f1;
+}
+.button{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    margin-left:-55px;
+    text-align:center;
+    background-color:#1ec1a2;
+    border:2px solid #1ec1a2;
+    border-radius:10px;
+    padding:5px 20px;
+    color: white;
+    font-size:16px;
+}
+.middle_button{
+    background-color:white;
+    color:#1ec1a2;
+}
+
+#form{
+  background-color:white;
+  color:black;
+  margin-bottom:80px;
+}
+
+#form{
+    background-color:white;
+    color:black;
+    margin-bottom:60px;
+}
+#form h2{
+    padding-top:30px;
+    font-size:20px;
+}
+#form .underline{
+    margin-bottom:60px;
+}
+form{
+    float:left;
+    width:55%;
+}
+#form form input, #form form textarea{
+    width:100%;
+    display:block;
+    border:1px solid #1ec1a2;
+    margin:22px 0;
+    padding:15px;
+    resize:none;
+    font-size:30px;
+    font-family:'Raleway',sans-serif;
+    font-weight:300;
+}
+#form form textarea{
+    height:180px;
+}
+#form form [type="submit"]{
+    background-color:#1ec1a2;
+    color:white;
+    position:absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 380px;
+    height: 70px;
+    border-radius:10px;
+    padding:5px;
+    font-size:32px;
+    display:block;
+}
+.redchair{
+    float:right;
+    width:40%;
+    padding-left:20px;
+
+}
+.redchair img{
+    position:absolute;
+    right:25px;
+    top:50%;
+    margin-top:-145px;
+    padding-right: 40px;
+}
+
+.checkbox{
+    position:relative;
+    width:100%;
+    bottom: -230px;
+    left: 60px;
+}
+
+.checkbox p{
+    width:300px;
+    display:block;
+    font-weight:300;
+    margin-left:50px;
+}
+
+.checkbox_img{
+    width:45px;
+    height:45px;
+    cursor:pointer;
+    background-image:url('../images/form_ok.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    border:1px solid #1ec1a2;
+    position:absolute;
+}
+
+footer{
+    background-color:white;
+    margin-top: 50px;
+}
+footer .container{
+    position:relative;
+}
+
+.rights{
+    float:left;
+    width:60%;
+}
+
+.links{
+  width: 20%;
+  float: right;
+  text-align: right;
+  margin-left: 50px;
+  margin-top: -10px;
+  padding-right: 50px;
+}
+
+.jakubplacek{
+  height: 50px;
+  width: 110px;
+  background-image: url('../images/jakubplacek.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 45%;
+
+}
+
+footer .footerlogo {
+  display: inline-block;
+  color: black;
+  float: right;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -15px;
+
+}
+
+footer span{
+  font-weight: bold;
+  color: #24ba9f;
+  font-variant: small-caps;
+
+}
+
+footer li{
+  display:inline-block;
+}
+
+.rights p{
+  color: #c2c2c2;
 }
 
 /* FONT - Raleway (podpięcie) */
