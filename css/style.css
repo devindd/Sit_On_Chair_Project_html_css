@@ -51,42 +51,47 @@ header{
   list-style-type: none;
   font-weight: bold;
   font-variant: small-caps;
+  position: relative;
 }
 
 header ul.submenu {
     position: absolute;
     top: 100%;
-    left: 20px;
-    padding-top: 10px;
     display: none;
+    background-color: black;
+    width: 180px;
+    top: 45px;
+    left: -20px;
+    z-index: 100;
 }
 
 /*Strzałka*/
 header ul.submenu::before {
-    content: " ";
+    content: "";
     border: 10px solid black;
     border-top-color: transparent;
     border-right-color: transparent;
     border-left-color: transparent;
     height: 0;
-    display: inline-block;
-    top: -10px;
-    left: 90px;
+    display: block;
+    top: -20px;
+    left: 85px;
     position: absolute;
 }
-
-header ul.submenu li {
-    background-color: black;
+.submenu li {
+  height: 10px;
 }
+  
+
 
 .submenu a {
     margin: 0;
-    padding-left: 15px;
+    padding-left: 0;
     padding-right: 20px;
     font-weight: bold;
     font-variant: small-caps;
     text-decoration: none;
-}
+  }
 
 header .nav a {
     text-decoration: none;
@@ -110,10 +115,13 @@ header .nav a {
   width: 50%;
   padding-top: 100px;
   background-size: cover;
-  transform: scale(1.3,1.3);
+  /*transform: scale(1.3,1.3);*/
   height: 400px;
   padding-left: 150px;
   margin-bottom: 50px;
+}
+.box1 img {
+width: 283px;
 }
 
 .box2{
@@ -216,7 +224,7 @@ header .nav a {
   padding:30px 0;
 }
 
-.arrow{
+.arrowl{
     font-size:100px;
     position: absolute;
     top:40%;
@@ -225,9 +233,15 @@ header .nav a {
     z-index: 2;
 }
 
-.arrow:last-child {
+.arrowr{
   float: right;
   padding-left: 520px;
+  font-size:100px;
+  position: absolute;
+  top:40%;
+  margin-top:-50px;
+  color:#1ec1a2;
+  z-index: 2;
 }
 
 .banner {
@@ -601,4 +615,8 @@ footer li{
 		url('../fonts/Raleway-BoldItalic.ttf') format('truetype');
 	font-weight: bold;
 	font-style: italic;
+}
+
+.hidden {
+  display: none;
 }
